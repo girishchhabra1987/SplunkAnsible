@@ -1,0 +1,5 @@
+-
+  name: Install and start splunk
+  hosts: hclanstarget
+  roles:
+    - InstallSplunk

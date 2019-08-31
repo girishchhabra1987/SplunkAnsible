@@ -1,0 +1,5 @@
+-
+  name: stop and remove splunk
+  hosts: hclanstarget
+  roles:
+    - UninstallSplunk

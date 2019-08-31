@@ -1,0 +1,6 @@
+---
+# tasks file for UninstallSplunk
+
+- include_tasks:  stop_splunk.yaml
+- include_tasks:  delete_splunk_folder.yaml
+- include_tasks:  remove_splunk_binary.yaml

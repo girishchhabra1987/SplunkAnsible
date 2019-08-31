@@ -1,0 +1,2 @@
+- name: start splunk daemon
+  shell: /root/splunk/bin/splunk start --accept-license

@@ -1,0 +1,4 @@
+- name: remove splunk binary
+  file:
+    path: "{{ dest_path }}/{{ splunk_binary }}"
+    state: absent

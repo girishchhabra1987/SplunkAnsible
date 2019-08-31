@@ -1,0 +1,10 @@
+- name: check if splunk folder already exists
+  stat:
+    path: "{{ splunk_home }}"
+  register: var_splunk_extract_present
+
+- name: unarchive splunk binary
+  unarchive:
+    src: "{{ dest_path }}/{{ splunk_binary }}"
+    dest: "{{ dest_path }}"
+  when: var_splunk_extract_present.stat.exists==False

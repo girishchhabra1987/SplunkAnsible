@@ -1,0 +1,3 @@
+    - include_tasks : copy_splunk.yaml
+    - include_tasks: unarchive_splunk.yaml
+    - include_tasks: start_splunk_firsttime.yaml

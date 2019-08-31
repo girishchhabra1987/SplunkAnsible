@@ -1,0 +1,10 @@
+- name: check if splunk binary present
+  stat:
+   path: "{{ dest_path }}/{{ splunk_binary }}"
+  register: var_splunk_present
+- name: copy if not present
+
+  copy:
+    src: "{{ src_path }}/{{ splunk_binary }}"
+    dest: "{{ dest_path }}/"
+  when: var_splunk_present.stat.exists == False

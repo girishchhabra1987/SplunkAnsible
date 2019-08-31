@@ -1,0 +1,5 @@
+src_path: /root
+dest_path: /root
+splunk_binary: splunk-7.3.1-bd63e13aa157-Linux-x86_64.tgz
+splunk_home: /root/splunk/
+first_time_passwd: changeme

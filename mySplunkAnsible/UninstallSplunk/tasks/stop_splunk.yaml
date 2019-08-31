@@ -1,0 +1,2 @@
+- name: stop splunk binary
+  command: "{{ splunk_home }}/bin/splunk stop "

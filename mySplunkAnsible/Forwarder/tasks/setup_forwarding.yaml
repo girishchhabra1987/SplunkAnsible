@@ -1,0 +1,19 @@
+- name: Setup forwarding to to indexers
+  blockinfile:
+    dest: "{{ splunk_home }}/etc/system/local/outputs.conf"
+    state: present
+    create: yes
+    marker: "# managed by ansible "
+    insertbefore: EOF
+    content: |
+       # Turn off indexing on the search head
+       [indexAndForward]
+       index = false
+
+       [tcpout]
+       defaultGroup = my_search_peers
+       forwardedindex.filter.disable = true
+       indexAndForward = false
+
+       [tcpout:my_search_peers]
+       server="{{ indexer }}:{{ indexer_receiving_port }}"

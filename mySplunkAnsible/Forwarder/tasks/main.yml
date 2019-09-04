@@ -1,0 +1,4 @@
+---
+# tasks file for Forwarder
+- include_tasks: setup_forwarding.yaml
+- include_tasks: splunk_restart.yaml

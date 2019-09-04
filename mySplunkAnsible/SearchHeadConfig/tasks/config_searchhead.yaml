@@ -1,0 +1,2 @@
+- name: Add peers to search head
+  command: "{{ splunk_home }}/bin/splunk add search-server https://{{indexer}}:8089 -auth {{ search_head_user }}:{{ first_time_passwd }} -remoteUsername {{ indexer_user }} -remotePassword {{ first_time_passwd }}"

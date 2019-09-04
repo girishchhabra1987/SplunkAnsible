@@ -1,0 +1,12 @@
+-
+  name: stop firewall on target hosts
+  hosts: hclanstarget
+  tasks:
+    - name: stop firewall service
+      service:
+        name: firewalld
+        state: stopped
+    #- name: stop httpd service
+    #  service:
+    #     name: httpd
+    #     state: stopped

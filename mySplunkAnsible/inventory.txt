@@ -1,3 +1,9 @@
 [hclanstarget]
-#hclanstarget1 ansible_host=192.168.1.9
-hclanstarget2 ansible_host=192.168.1.8
+hclanstarget1 ansible_host=192.168.43.16
+hclanstarget2 ansible_host=192.168.43.54
+
+[indexer]
+hclanstarget2 ansible_host=192.168.43.54
+
+[searchhead]
+hclanstarget1 ansible_host=192.168.43.16

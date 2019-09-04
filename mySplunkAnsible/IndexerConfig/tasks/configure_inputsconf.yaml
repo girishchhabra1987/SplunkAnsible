@@ -1,0 +1,10 @@
+- name: Add receiving port in inputs.conf
+  blockinfile:
+   dest: "{{ splunk_home }}/etc/system/local/inputs.conf"
+   state: present
+   create: true
+   marker: "# Ansible-managed - set receiving port "
+   insertafter: EOF
+   content: |
+     [splunktcp://{{ indexer_receiving_port }}]
+     disabled = 0

@@ -1,0 +1,4 @@
+- include: server_setup.yaml
+- include: splunk_setup_core.yaml
+- include: splunk_configure_indexer.yaml
+- include: splunk_configure_searchhead.yaml

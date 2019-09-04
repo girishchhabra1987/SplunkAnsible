@@ -1,0 +1,5 @@
+-
+  name: Configure and  restart splunk
+  hosts: searchhead
+  roles:
+    - SearchHeadConfig

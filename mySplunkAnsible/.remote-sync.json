@@ -5,9 +5,9 @@
   "uploadOnSave": false,
   "useAtomicWrites": false,
   "deleteLocal": false,
-  "hostname": "192.168.1.2",
+  "hostname": "192.168.43.111",
   "port": "22",
-  "target": "/root/AnsibleSplunk",
+  "target": "/root/mySplunkAnsible",
   "ignore": [
     ".remote-sync.json",
     ".git/**"

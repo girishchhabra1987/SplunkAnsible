@@ -1,0 +1,5 @@
+indexer: 192.168.43.54
+indexer_receiving_port: 9997
+first_time_passwd: changeme123
+search_head_user: admin
+indexer_user: admin

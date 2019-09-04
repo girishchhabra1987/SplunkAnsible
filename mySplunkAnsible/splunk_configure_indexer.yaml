@@ -1,0 +1,6 @@
+-
+  name: Configure and  restart splunk
+  hosts: indexer
+  roles:
+    - IndexerConfig
+

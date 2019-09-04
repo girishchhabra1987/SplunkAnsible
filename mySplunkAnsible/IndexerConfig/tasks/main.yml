@@ -1,0 +1,2 @@
+    - include_tasks : configure_indexer.yaml
+    - include_tasks : splunk_restart.yaml
